@@ -13,13 +13,15 @@ const MobileNav = () => {
 
   return (
     <header className="header">
-      <Link href="/" className="flex items-center gap-2 md:py-2">
-        <Image
+      <Link href="/" className="flex items-center gap-2 md:py-2 text-sm:text-xl font-semibold dark:text-white">
+        {/* <Image
           src="/assets/images/logo-text.svg"
           alt="logo"
           width={180}
           height={28}
-        />
+        /> */}
+        <span className="px-2 py-2 bg-gradient-to-r from-indigo-500 via-purple-500 to bg-pink-500 rounded-lg text-white">Dara Ai</span>
+        
       </Link>
 
       <nav className="flex gap-2">
@@ -38,12 +40,22 @@ const MobileNav = () => {
             </SheetTrigger>
             <SheetContent className="sheet-content sm:w-64">
               <>
-                <Image 
+                {/* <Image 
                   src="/assets/images/logo-text.svg"
                   alt="logo"
                   width={152}
                   height={23}
-                />
+                /> */}
+                <Link href="/" className="flex items-center gap-2 md:py-2 text-sm:text-xl font-semibold dark:text-white">
+        {/* <Image
+          src="/assets/images/logo-text.svg"
+          alt="logo"
+          width={180}
+          height={28}
+        /> */}
+        <span className="px-2 py-2 bg-gradient-to-r from-indigo-500 via-purple-500 to bg-pink-500 rounded-lg text-white">Dara Ai</span>
+        
+      </Link>
 
               <ul className="header-nav_elements">
               {navLinks.map((link) => {
