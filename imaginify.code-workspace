@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "public",
+			"path": "../complete res/imaginify/public"
+		},
+		{
+			"name": "imaginify",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
