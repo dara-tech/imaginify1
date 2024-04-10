@@ -42,7 +42,7 @@ const Footer = () => {
         </div>
         <hr className='my-8' />
         <div className='flex items-center justify-between'>
-          <p className='text-sm text-gray-600'>© {new Date().getFullYear()} Sovandara's blog</p>
+          <p className='text-sm text-gray-600'>© {new Date().getFullYear()} Dara AI</p>
           <SocialLinks />
         </div>
       </div>
