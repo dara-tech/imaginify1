@@ -42,7 +42,7 @@ const TransformedImage = ({ image, type, title, transformationConfig, isTransfor
       </div>
 
       {image?.publicId && transformationConfig ? (
-        <div className="relative">
+        <div className=" overflow-hidden relative">
           <CldImage 
             width={getImageSize(type, image, "width")}
             height={getImageSize(type, image, "height")}
@@ -63,7 +63,7 @@ const TransformedImage = ({ image, type, title, transformationConfig, isTransfor
           />
 
           {isTransforming && (
-            <div className="transforming-loader">
+            <div className="transforming-loader  overflow-hidden  ">
               <Image 
                 src="/assets/icons/spinner.svg"
                 width={50}

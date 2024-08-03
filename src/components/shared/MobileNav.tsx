@@ -7,6 +7,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Button } from "../ui/button"
+import Logo from "./Logo"
 
 const MobileNav = () => {
   const pathname = usePathname();
@@ -20,11 +21,11 @@ const MobileNav = () => {
           width={180}
           height={28}
         /> */}
-        <span className="px-2 py-2 bg-gradient-to-r from-indigo-500 via-purple-500 to bg-pink-500 rounded-lg text-white">Dara Ai</span>
+       <Logo/>
         
       </Link>
 
-      <nav className="flex gap-2">
+      <nav className="flex gap-2 ring-2 p-1 rounded-md hover:bg-gray-100 hover:ring-green-500">
         <SignedIn>
           <UserButton afterSignOutUrl="/" />
 
@@ -53,7 +54,7 @@ const MobileNav = () => {
           width={180}
           height={28}
         /> */}
-        <span className="px-2 py-2 bg-gradient-to-r from-indigo-500 via-purple-500 to bg-pink-500 rounded-lg text-white">Dara Ai</span>
+       <Logo/>
         
       </Link>
 
@@ -63,7 +64,7 @@ const MobileNav = () => {
 
                 return (
                   <li 
-                    className={`${isActive && 'gradient-text'} p-18 flex whitespace-nowrap text-dark-700`}
+                    className={`${isActive && 'gradient-text ring-2 '} mb-2 md:mb-2 p-18 flex whitespace-nowrap text-dark-700 hover:bg-gray-200 w-full rounded-md hover:ring-1 hover:ring-gray-200` }
                     key={link.route}
                     >
                     <Link className="sidebar-link cursor-pointer" href={link.route}>
